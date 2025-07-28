@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.senai.integracaohardware"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.senai.integracaohardware"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -29,6 +29,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        aidl = true
+    }
+
 }
 
 dependencies {
